@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Запись к врачу</title>
+    <link rel="stylesheet" href="C:\Users\Student\Desktop\programming-languages-and-technologies\Lab4\task11\style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Запись на приём к врачу</h2>
+        <form id="doctorForm">
+            <div class="field">
+                <label for="doctorName">ФИО пациента:</label>
+                <input type="text" id="doctorName" placeholder="Введите ваше ФИО">
+            </div>
+            <div class="field">
+                <label for="specialty">Специальность врача:</label>
+                <select id="specialty">
+                    <option value="">Выберите врача</option>
+                    <option value="терапевт">Терапевт</option>
+                    <option value="хирург">Хирург</option>
+                    <option value="кардиолог">Кардиолог</option>
+                    <option value="невролог">Невролог</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="appDate">Дата приема:</label>
+                <input type="date" id="appDate">
+            </div>
+            <div class="field">
+                <label for="appTime">Время приема:</label>
+                <input type="time" id="appTime">
+            </div>
+            <div class="field">
+                <label>Тип приема:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="visitType" value="первичный"> Первичный</label>
+                    <label><input type="radio" name="visitType" value="повторный"> Повторный</label>
+                </div>
+            </div>
+            <button type="submit">Записаться</button>
+            <p id="message" class="message"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

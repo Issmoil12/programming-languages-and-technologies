@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Бронирование мероприятия</title>
+    <link rel="stylesheet" href="C:\Users\Student\Desktop\programming-languages-and-technologies\Lab4\task18\style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Бронирование билетов</h2>
+        <form id="eventForm">
+            <div class="field">
+                <label for="userName">Ваше имя:</label>
+                <input type="text" id="userName" placeholder="Имя">
+            </div>
+            <div class="field">
+                <label for="category">Категория билета:</label>
+                <select id="category">
+                    <option value="">Выберите категорию</option>
+                    <option value="5000">Стандарт (5000 тг)</option>
+                    <option value="10000">VIP (10000 тг)</option>
+                    <option value="15000">Премиум (15000 тг)</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="amount">Количество билетов:</label>
+                <input type="number" id="amount" min="1" max="10" value="1">
+            </div>
+            <div class="field checkbox-field">
+                <label>
+                    <input type="checkbox" id="parking" value="2000"> Добавить парковочное место (+2000 тг)
+                </label>
+            </div>
+            <button type="submit">Рассчитать и забронировать</button>
+            <p id="message" class="message"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
