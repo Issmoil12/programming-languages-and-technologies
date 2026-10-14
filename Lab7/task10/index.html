@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список задач</title>
+    <link rel="stylesheet" href="C:\Users\Student\.anaconda\programming-languages-and-technologies\Lab7\task10\style.css">
+    <script src="C:\Users\Student\.anaconda\programming-languages-and-technologies\Lab7\task10\app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Мой список задач</h1>
+        <p>Лабораторная работа № 7</p>
+    </header>
+
+    <nav>
+        <button data-page="all" class="active">Все</button>
+        <button data-page="active">Активные</button>
+        <button data-page="completed">Выполненные</button>
+    </nav>
+
+    <main>
+        <h2>Добавить задачу</h2>
+        <form id="taskForm">
+            <input id="taskInput" type="text"
+                placeholder="Введите задачу" maxlength="120" required>
+            <button type="submit">Добавить</button>
+        </form>
+
+        <h2 id="sectionTitle">Все задачи</h2>
+        <p id="taskCounter">Всего задач: 0</p>
+        <ul id="taskList"></ul>
+        <p id="emptyMessage">Задач пока нет.</p>
+    </main>
+
+    <footer>HTML5 • CSS3 • JavaScript</footer>
+</body>
+</html>

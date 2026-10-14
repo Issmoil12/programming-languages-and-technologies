@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    color: #263238;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background: #2563eb;
+    color: white;
+    padding: 30px 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+nav button {
+    background: white;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
+nav button.active {
+    background: #2563eb;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000012;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #2563eb;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+#taskCounter {
+    margin-bottom: 15px;
+    color: #64748b;
+}
+
+#taskList {
+    list-style: none;
+}
+
+#taskList li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    margin-bottom: 10px;
+    background: #f8fafc;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+#taskList li span {
+    flex: 1;
+}
+
+#taskList li.done span {
+    text-decoration: line-through;
+    color: #64748b;
+}
+
+#emptyMessage {
+    color: #64748b;
+    padding: 10px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #64748b;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav button {
+        width: 100%;
+    }
+
+    main {
+        padding: 18px;
+    }
+}
