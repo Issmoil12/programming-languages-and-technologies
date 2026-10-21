@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №8 — Каталог фильмов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Каталог фильмов</h1>
+        
+        <!-- Форма добавления фильма -->
+        <div class="form-section">
+            <h3>Добавить фильм</h3>
+            <input type="text" id="movieTitle" placeholder="Название фильма">
+            <input type="text" id="movieGenre" placeholder="Жанр (например: Драма, Фантастика)">
+            <input type="number" id="movieRating" min="1" max="10" step="0.1" placeholder="Рейтинг (1 - 10)">
+            <button id="addBtn">Добавить в каталог</button>
+        </div>
+
+        <!-- Панель фильтрации -->
+        <div class="filter-section">
+            <label for="genreFilter">Фильтр по жанру:</label>
+            <select id="genreFilter">
+                <option value="all">Все жанры</option>
+            </select>
+        </div>
+
+        <!-- Список фильмов -->
+        <ul id="movieList"></ul>
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>

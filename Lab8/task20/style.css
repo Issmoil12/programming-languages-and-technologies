@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #2c3e50;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+.summary-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.summary-item strong {
+    font-size: 1.2rem;
+    margin-top: 4px;
+}
+
+.balance-item {
+    grid-column: span 2;
+    border-top: 1px solid #e1e1e1;
+    padding-top: 8px;
+    margin-top: 4px;
+}
+
+.income { color: #27ae60; }
+.expense { color: #e74c3c; }
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+    border-color: #27ae60;
+}
+
+button {
+    padding: 10px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #219653;
+}
+
+ul {
+    list-style: none;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+li {
+    background: #fdfdfd;
+    border: 1px solid #e1e1e1;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.op-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.op-category {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.op-details {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+}
+
+.op-amount {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.op-amount.income { color: #27ae60; }
+.op-amount.expense { color: #e74c3c; }
+
+li button {
+    background-color: #e74c3c;
+    padding: 5px 8px;
+    font-size: 0.8rem;
+}
+
+li button:hover {
+    background-color: #c0392b;
+}
