@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пользователи, публикации и комментарии</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Пользователи и публикации</h1>
+
+        <p class="description">
+            Выберите пользователя, чтобы посмотреть его публикации
+            и комментарии.
+        </p>
+
+        <div class="toolbar">
+            <label for="userSelect">Пользователь:</label>
+            <select id="userSelect">
+                <option value="">Сначала загрузите пользователей</option>
+            </select>
+
+            <button id="loadUsersButton">Загрузить пользователей</button>
+        </div>
+
+        <p id="status" role="status">Ожидание загрузки данных.</p>
+
+        <section id="userInfo" class="user-info" hidden></section>
+
+        <section id="postsSection" hidden>
+            <h2>Публикации пользователя</h2>
+            <div id="postsList" class="posts-grid"></div>
+        </section>
+    </main>
+</body>
+</html>
